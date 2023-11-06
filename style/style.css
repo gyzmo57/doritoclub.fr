@@ -1,0 +1,72 @@
+h1 {font: normal bold 5em arial}
+h2 {font: normal bold 2em arial}
+h3 {font: normal normal 1.5em arial; margin-left: 0.5em;}
+p {font: normal normal 1em arial; margin-left: 1.5em}
+legend {font: normal normal 2em arial;}
+nav {font-size: 2em}
+body {
+    background: white url('https://cdn.myportfolio.com/97544e233dabec03f8854be7616fd7b5/cd42c22a-3f99-4e8f-ad37-a06017de8331_rw_1200.png?h=a7cfce390c9aed26f6f6cfa3b162b50d') repeat top fixed;
+    font: normal normal 1.2em arial
+}
+
+a:link, a:visited {color: green; text-decoration: none}
+a:hover {text-decoration: underline}
+nav a:visited, a:link {color: gray; text-decoration: none;}
+
+.abs-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.fixed-top-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.select {display:block}
+
+
+.form-control-dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.centered {text-align:center}
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+
+.iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

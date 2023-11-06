@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>787b</title>
+    </head>
+
+    <body>
+        <div class="container bg-dark text-white">
+            <div class="row">
+                <div class="col-12">
+                    <form method="post" action="traitement.php" class="mt-3 mb-3">
+
+                        <fieldset>
+                            <legend>Informations personnelles</legend>
+                            <div class="row">
+                                <div class="form-group col-6">
+                                    <label for="nom">Nom</label>
+                                    <input class="form-control bg-dark text-white" type="text" name="nom" id="nom" maxlength="30" required>
+                                </div>
+
+                                <div class="form-group col-6">
+                                    <label for="prenom">Prénom</label>
+                                    <input class="form-control bg-dark text-white" type="text" name="prenom" id="prenom" maxlength="30" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-6">
+                                    <label for="date">date de naissance</label>
+                                    <input class="form-control bg-dark text-white" type="date" name="date" id="date" required>
+                                </div>
+
+                                <div class="form-group mt-3 col-6">
+                                    <label for="genre1">Vous êtes&nbsp;:</label>
+                                    <input type="radio" id="genre1" name="genre" value=" femme" required>Une femme
+                                    <input type="radio" id="genre2" name="genre" value="homme" required>Un homme
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-6">
+                                    <label for="email">adresse mail</label>
+                                    <input class="form-control bg-dark text-white" type="email" name="email" id="email" placeholder="nom@exemple.com" required> 
+                                </div>
+
+                                <div class="form-group col-6">
+                                    <label for="tel">Numéro de téléphone</label>
+                                    <input class="form-control bg-dark text-white" type="text" id="tel" name="tel" pattern="[0-0][0-9]{9}" title="Veuillez entrer un numéro valide" required>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend class="mt-3">Expériences</legend>
+
+                            <div class="row">
+                                <div class="form-group col-6">
+                                    <label class="ml-3" for="pilot1">Avez vous déjà piloté ?&nbsp;:</label>
+                                    <input type="radio" id="pilot1" name="pilot" value="oui" required>Oui
+                                    <input type="radio" id="pilot2" name="pilot" value="non" required>Non
+                                </div>
+
+                                <div class="form-group col-6">
+                                    <label for="niveau">Votre niveau&nbsp;:</label>
+                                    <em>novice</em>
+                                    <input type="range" name="niveau" id="niveau" min="0" max="10">
+                                    <em>Sébastien Loeb</em>
+                                </div>
+                            </div>
+
+                                <div class="form-group col-6 mt-3">
+                                    <label class="select" for="type_pilot">Si oui quel type de véhicules ?</label>
+                                    <select class="form-control bg-dark text-white" name="type_pilot" id="type_pilot" size="7" multiple >
+                                        <option value="kart">karting</option>
+                                        <option value="supercar">voiture de sport/supercar (lors d'un trackday par exemple)</option>
+                                        <optgroup label="Formule">
+                                            <option value="F4">formule 4 ou équivalent</option>
+                                            <option value="F3">formule 3/renault 2.0</option>
+                                            <option value="F2">formule 2/renault 3.5/GP2/3000</option>
+                                            <option value="F1">formule 1</option>
+                                        </optgroup>
+                                        <optgroup label="Rallye">
+                                            <option value="GN">Rallye groupe N</option>
+                                            <option value="GA">Rallye groupe A</option>
+                                            <option value="GR">Rallye groupe R</option>
+                                            <option value="GF2000">Rallye groupe F2000</option>
+                                            <option value="GGT">Rallye groupe GT</option>
+                                            <option value="GB">Rallye groupe B</option>
+                                        </optgroup>
+                                        <optgroup label="Endurance">
+                                            <option value="GC">Groupe C</option>
+                                            <option value="LMP1">LMP1</option>
+                                            <option value="LMP2">LMP2</option>
+                                            <option value="LMH">LMH</option>
+                                            <option value="LMDh">LMDh</option>
+                                        </optgroup>
+                                        <optgroup label="GT">
+                                            <option value="GT4">GT4</option>
+                                            <option value="GT3">GT3</option>
+                                            <option value="GT2">GT2/GTE</option>
+                                            <option value="GT1">GT1</option>
+                                        </optgroup>
+                                        <option value="Autres">Autres (veuillez préciser)</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-6 mt-3">
+                                    <label for="autre">Si autres séléctionné</label>
+                                    <textarea class="form-control bg-dark text-white" name="autre" placeholder="autres" id="autre" rows="7" cols="50"></textarea>
+                                </div>
+
+                                <input class="btn btn-success mt-3" type="submit" value="envoyer">
+                                <input class="btn btn-success mt-3" type="reset" value="réinitialiser">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
